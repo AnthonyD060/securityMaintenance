@@ -7,10 +7,10 @@ pipeline {
             }
         }
         
-        stage('automateSecurityTooling')(
+        stage('automateSecurityTooling'){
             steps {
                 sh 'python3 automateSecurityTooling.py'
             }
-        )
+        }
     }
 }
