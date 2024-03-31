@@ -5,15 +5,12 @@ pipeline {
             steps {
                 sh 'python3 --version'
             }
-<<<<<<< HEAD
-=======
         }
-        
         stage('automateSecurityTooling'){
             steps {
                 sh 'python3 automateSecurityTooling.py'
             }
->>>>>>> 31b4b87a0777f358e48a765e17a665f9c8655629
+
         }
     }
 }
