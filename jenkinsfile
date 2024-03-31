@@ -1,0 +1,13 @@
+pipeline {
+    agent any
+    stages {
+        stage('version') {
+            sh 'python3 --version'
+        }
+    }
+    stage('automateSecurityTooling')(
+        steps {
+            sh 'python3 automateSecurityTooling.py'
+        }
+    )
+}
